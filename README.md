@@ -48,13 +48,13 @@ Ao enviar dois arquivos .txt, a interface exibirá as linhas correspondentes lad
 ⚠️ Em desenvolvimento
 Este projeto ainda está em evolução. As próximas melhorias planejadas incluem:
 
-- [] Suporte à comparação de arquivos .json e .log
+- [ ] Suporte à comparação de arquivos .json e .log
 
-- [] Detecção de diferenças mais precisa (nível de caractere e estrutura)
+- [ ] Detecção de diferenças mais precisa (nível de caractere e estrutura)
 
-- [] Interface gráfica mais moderna (Bootstrap ou Tailwind)
+- [ ] Interface gráfica mais moderna (Bootstrap ou Tailwind)
 
-- [] Opção para download do resultado em HTML
+- [ ] Opção para download do resultado em HTML
 
 - [] Versão responsiva para dispositivos móveis
 
