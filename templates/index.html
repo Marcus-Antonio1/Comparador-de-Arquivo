@@ -1,0 +1,124 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Comparador de Logs - Destaque fino</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input[type="file"] {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      vertical-align: top;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      text-align: left;
+    }
+    .line-num {
+      width: 60px;
+      text-align: right;
+      background-color: #f9f9f9;
+      font-weight: bold;
+    }
+    .diff-insert {
+      background-color: #d1ffd1;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Comparador de Logs - Destaque fino</h1>
+  <form action="/" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="file1">Arquivo 1:</label>
+      <input type="file" name="file1" id="file1" required />
+    </div>
+    <div class="form-group">
+      <label for="file2">Arquivo 2:</label>
+      <input type="file" name="file2" id="file2" required />
+    </div>
+    <button type="submit">Comparar</button>
+  </form>
+
+  {% if diffs %}
+  <table>
+    <thead>
+      <tr>
+        <th>Linha</th>
+        <th>Arquivo 1</th>
+        <th>Arquivo 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for num, l1, l2 in diffs %}
+      <tr>
+        <td class="line-num">{{ num }}</td>
+        <td>{{ l1|safe }}</td>
+        <td>{{ l2|safe }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</body>
+</html>
+
+
