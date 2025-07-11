@@ -56,7 +56,7 @@ Este projeto ainda está em evolução. As próximas melhorias planejadas inclue
 
 - [ ] Opção para download do resultado em HTML
 
-- [] Versão responsiva para dispositivos móveis
+- [ ] Versão responsiva para dispositivos móveis
 
 🤝 Contribuições
 Sinta-se à vontade para sugerir melhorias, abrir issues. Toda ajuda é bem-vinda!
