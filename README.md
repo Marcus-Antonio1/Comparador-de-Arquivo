@@ -22,8 +22,8 @@ Atualmente, o foco está na comparação de arquivos `.txt`, com realce nas pala
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/Marcus-Antonio1/Comparador-de-Arquivo.git
+cd Comparador-de-Arquivo
 ```
 
 2. Instale as dependências (de preferência em um ambiente virtual):
@@ -48,15 +48,15 @@ Ao enviar dois arquivos .txt, a interface exibirá as linhas correspondentes lad
 ⚠️ Em desenvolvimento
 Este projeto ainda está em evolução. As próximas melhorias planejadas incluem:
 
- Suporte à comparação de arquivos .json e .log
+- [] Suporte à comparação de arquivos .json e .log
 
- Detecção de diferenças mais precisa (nível de caractere e estrutura)
+- [] Detecção de diferenças mais precisa (nível de caractere e estrutura)
 
- Interface gráfica mais moderna (Bootstrap ou Tailwind)
+- [] Interface gráfica mais moderna (Bootstrap ou Tailwind)
 
- Opção para download do resultado em HTML
+- [] Opção para download do resultado em HTML
 
- Versão responsiva para dispositivos móveis
+- [] Versão responsiva para dispositivos móveis
 
 🤝 Contribuições
-Sinta-se à vontade para sugerir melhorias, abrir issues ou enviar pull requests. Toda ajuda é bem-vinda!
+Sinta-se à vontade para sugerir melhorias, abrir issues. Toda ajuda é bem-vinda!
